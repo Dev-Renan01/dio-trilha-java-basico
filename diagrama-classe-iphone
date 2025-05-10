@@ -1,0 +1,39 @@
+
+ Diagrama de Classe - iPhone
+
+Diagrama de Classe do iPhone - 
+  (https://lucid.app/lucidchart/39652fc7-77c5-4da8-ad59-aa5ff03aef5f/edit?viewport_loc=-283%2C-183%2C1673%2C976%2C0_0&invitationId=inv_4145610a-b8d2-44cd-bc7b-77dffb307dfb)
+
+
+Diagrama
+
+
+  classDiagrama
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+    }
+
+    class AparelhoTelefonico {
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class NavegadorInternet {
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    class iPhone {
+        +ligar()
+        +desligar()
+        +reiniciar()
+    }
+
+    iPhone -> ReprodutorMusical
+    iPhone -> AparelhoTelefonico
+    iPhone -> NavegadorInternet
+
